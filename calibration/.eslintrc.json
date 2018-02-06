@@ -1,0 +1,19 @@
+{
+  "extends": ["eslint:recommended"],
+  "plugins": [],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "env": {
+    "node": true,
+    "es6": true,
+    "browser": true,
+    "jquery": true
+  },
+  "globals": {},
+  "rules": {
+    "arrow-spacing": "error",
+    "no-var": "error",
+    "prefer-const": "error"
+  }
+}

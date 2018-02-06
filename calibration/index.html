@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./style.css" charset="utf-8">
+    <title>EOG</title>
+    <script>
+      const electron = require('electron');
+      const ipc = electron.ipcRenderer;
+      function synchronous(i) {
+        console.log('sync');
+        ipc.sendSync('synchronous-message', i);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="rectangle"></div>
+      <div class="target"></div>
+    </div>
+    <script>
+      window.nodeRequire = require;
+      delete window.require;
+      delete window.exports;
+      delete window.module;
+    </script>
+    <script src="./jquery-1.12.0.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

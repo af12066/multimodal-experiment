@@ -1,0 +1,28 @@
+{
+  "name": "multimodal-experiment",
+  "version": "1.0.0",
+  "description": "マルチモーダル実験のキャリブレーション部分",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/af12066/multimodal-experiment.git"
+  },
+  "keywords": [],
+  "author": "<ma16079@shibaura-it.ac.jp>",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/af12066/multimodal-experiment/issues"
+  },
+  "homepage": "https://github.com/af12066/multimodal-experiment#readme",
+  "dependencies": {
+    "electron": "^1.7.12",
+    "serialport": "^6.0.5"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^1.7.3",
+    "eslint": "^4.17.0"
+  }
+}
